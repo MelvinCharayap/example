@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My first Website</title>
+	<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/af8938b2d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="header">
+	   <nav>
+        <a href="index.html"><img src="images/logo.png" width="100"></a>
+        <div class="nav-links"id="navLinks">
+          <i class="fa-sharp fa-solid fa-xmark"style="color: black;"onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">ADMIN</a></li>
+                <li><a href="">MODELS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+           <i class="fa-solid fa-bars"style="color: white;"onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1 style="font-family: fantasy">Novus Meraki PH</h1>
+        <P style="font-family: monospace; font-size: 40px">Talent Management</P>
+        <P style="font-size:20px;font-family: cursive;margin:20px 0px 20px">Models With Purpose</P>
+        <a href=""class="hero-btn">visit us on www.novusmeraki.ph</a>
+        </div>
+	</section>
+    <!------ COURSE ------>
+     <!------ Admins ------>
+    <section class="Admins">
+    <h1>Admins</h1>
+    <p>This are the admins of meraki model Agency
+        </p>
+    </section>
+    <!------ janine ------>
+    <section class="Meraki">
+        <h1>Meraki admins</h1>
+        
+        <div class="row">
+            <div class="Meraki-col">
+                <img src="images/janine.jpg">
+                <div class="layer">
+                    <h3>Janine Buen</h3>
+                </div>
+            </div>
+            <div class="Meraki-col">
+                <img src="images/andrea.jpg">
+                <div class="layer">
+                    <h3>Andrea Mainit</h3>
+                </div>
+        </div>
+            <div class="Meraki-col">
+                <img src="images/janine.jpg">
+                <div class="layer">
+                    <h3>Maja Gravidez</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0px";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+    </script>
+</body>
+</html>
